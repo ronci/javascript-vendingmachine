@@ -2190,7 +2190,7 @@ if (!accessToken) {
 var managerNameButton = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#manager-name-button');
 var optionList = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#option-list');
 var logoutButton = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#logout');
-managerNameButton.textContent = user.name.substr(0, 1);
+managerNameButton.textContent = user.name[0];
 managerNameButton.addEventListener('click', makeAnimation);
 logoutButton.addEventListener('click', logout);
 
