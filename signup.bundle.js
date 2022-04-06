@@ -1807,7 +1807,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/index.css */ "./src/css/index.css");
 /* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
 /* harmony import */ var _validAccount__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validAccount */ "./src/js/signup/validAccount.js");
-/* harmony import */ var _utils_snackbar_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/snackbar.js */ "./src/js/utils/snackbar.js");
+/* harmony import */ var _utils_snackbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/snackbar */ "./src/js/utils/snackbar.js");
 /* harmony import */ var _utils_API__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/API */ "./src/js/utils/API.js");
 
 
@@ -1861,7 +1861,7 @@ signUpForm.addEventListener('submit', /*#__PURE__*/function () {
           case 18:
             _context.prev = 18;
             _context.t0 = _context["catch"](5);
-            (0,_utils_snackbar_js__WEBPACK_IMPORTED_MODULE_5__.handleSnackbarMessage)(_context.t0.message);
+            (0,_utils_snackbar__WEBPACK_IMPORTED_MODULE_5__.handleSnackbarMessage)(_context.t0.message);
 
           case 21:
           case "end":
