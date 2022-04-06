@@ -1756,8 +1756,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _css_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/index */ "./src/css/index.css");
-/* harmony import */ var _utils_API__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/API */ "./src/js/utils/API.js");
-/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _utils_API__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/API */ "./src/js/utils/API.js");
 /* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/dom */ "./src/js/utils/dom.js");
 /* harmony import */ var _utils_snackbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./utils/snackbar */ "./src/js/utils/snackbar.js");
 /* harmony import */ var _utils_sessionStorage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/sessionStorage */ "./src/js/utils/sessionStorage.js");
@@ -1783,7 +1783,7 @@ loginForm.addEventListener('submit', /*#__PURE__*/function () {
             loginEmailValue = emailInput.value;
             loginPasswordValue = passwordInput.value;
             _context.next = 5;
-            return (0,_utils_API__WEBPACK_IMPORTED_MODULE_3__.login)(loginEmailValue, loginPasswordValue);
+            return (0,_utils_API__WEBPACK_IMPORTED_MODULE_4__.login)(loginEmailValue, loginPasswordValue);
 
           case 5:
             response = _context.sent;
@@ -1803,7 +1803,7 @@ loginForm.addEventListener('submit', /*#__PURE__*/function () {
             return _context.abrupt("return");
 
           case 13:
-            (0,_utils_snackbar__WEBPACK_IMPORTED_MODULE_6__.handleSnackbarMessage)(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.SNACKBAR_MESSAGE.NOT_USER);
+            (0,_utils_snackbar__WEBPACK_IMPORTED_MODULE_6__.handleSnackbarMessage)(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.SNACKBAR_MESSAGE.NOT_USER);
 
           case 14:
           case "end":

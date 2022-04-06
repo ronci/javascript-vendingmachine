@@ -286,14 +286,14 @@ var controller = new Controller();
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _utils_event__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/event */ "./src/js/utils/event.js");
-/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _utils_event__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/event */ "./src/js/utils/event.js");
 
 
 
 var render = function render() {
   var hash = window.location.hash;
-  (0,_utils_event__WEBPACK_IMPORTED_MODULE_0__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.SECTION_CONTAINER, '@render', {
+  (0,_utils_event__WEBPACK_IMPORTED_MODULE_1__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.SECTION_CONTAINER, '@render', {
     hash: hash
   });
 };
@@ -791,8 +791,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_helpers_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_helpers_classPrivateFieldGet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/classPrivateFieldGet */ "./node_modules/@babel/runtime/helpers/esm/classPrivateFieldGet.js");
-/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
-/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
 /* harmony import */ var _utils_event__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/event */ "./src/js/utils/event.js");
 /* harmony import */ var _templates_templates__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../templates/templates */ "./src/js/templates/templates.js");
 
@@ -834,13 +834,13 @@ var ProductPurchaseView = /*#__PURE__*/function () {
         e.preventDefault();
         if (e.target.id !== 'purchase-form') return;
         var userAmount = _this.$amountInput.valueAsNumber;
-        (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.SECTION_CONTAINER, '@amount', {
+        (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.SECTION_CONTAINER, '@amount', {
           userAmount: userAmount
         });
       }
     });
 
-    (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.on)(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.SECTION_CONTAINER, [['submit', (0,_babel_runtime_helpers_classPrivateFieldGet__WEBPACK_IMPORTED_MODULE_2__["default"])(this, _onSubmitInputAmount)]]);
+    (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.on)(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.SECTION_CONTAINER, [['submit', (0,_babel_runtime_helpers_classPrivateFieldGet__WEBPACK_IMPORTED_MODULE_2__["default"])(this, _onSubmitInputAmount)]]);
 
     _classPrivateMethodGet(this, _bindPurchaseAndReturnEvent, _bindPurchaseAndReturnEvent2).call(this);
   }
@@ -856,13 +856,13 @@ var ProductPurchaseView = /*#__PURE__*/function () {
   }, {
     key: "initPurchaseDOM",
     value: function initPurchaseDOM() {
-      this.$amountInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#amount-input');
-      this.$currentAmount = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#current-amount');
-      this.$purchaseTbody = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#purchase-tbody');
-      this.$fiveHundredCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#five-hundred-coin-remain');
-      this.$oneHundredCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#one-hundred-coin-remain');
-      this.$fiftyCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#fifty-coin-remain');
-      this.$tenCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#ten-coin-remain');
+      this.$amountInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#amount-input');
+      this.$currentAmount = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#current-amount');
+      this.$purchaseTbody = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#purchase-tbody');
+      this.$fiveHundredCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#five-hundred-coin-remain');
+      this.$oneHundredCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#one-hundred-coin-remain');
+      this.$fiftyCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#fifty-coin-remain');
+      this.$tenCoinRemain = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#ten-coin-remain');
     }
   }, {
     key: "renderAmount",
@@ -904,7 +904,7 @@ var ProductPurchaseView = /*#__PURE__*/function () {
 function _bindPurchaseAndReturnEvent2() {
   var _this3 = this;
 
-  _constants_constants__WEBPACK_IMPORTED_MODULE_4__.SECTION_CONTAINER.addEventListener('click', function (e) {
+  _constants_constants__WEBPACK_IMPORTED_MODULE_3__.SECTION_CONTAINER.addEventListener('click', function (e) {
     var target = e.target;
 
     if (target.classList.contains('purchase-button')) {
@@ -912,14 +912,14 @@ function _bindPurchaseAndReturnEvent2() {
     }
 
     if (target.id === 'return-button') {
-      (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.SECTION_CONTAINER, '@return');
+      (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.SECTION_CONTAINER, '@return');
     }
   });
 }
 
 function _purchase2(selectedProduct) {
   var index = selectedProduct.rowIndex - 1;
-  (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_4__.SECTION_CONTAINER, '@purchase', {
+  (0,_utils_event__WEBPACK_IMPORTED_MODULE_5__.emit)(_constants_constants__WEBPACK_IMPORTED_MODULE_3__.SECTION_CONTAINER, '@purchase', {
     index: index
   });
 }
@@ -940,16 +940,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
 /* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
-/* harmony import */ var _templates_templates__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../templates/templates */ "./src/js/templates/templates.js");
-/* harmony import */ var _utils_sessionStorage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/sessionStorage */ "./src/js/utils/sessionStorage.js");
+/* harmony import */ var _utils_sessionStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/sessionStorage */ "./src/js/utils/sessionStorage.js");
+/* harmony import */ var _templates_templates__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../templates/templates */ "./src/js/templates/templates.js");
 
 
 
 
 var routes = {
-  '#!manage': _templates_templates__WEBPACK_IMPORTED_MODULE_2__.CATEGORY_TEMPLATE.MANAGE,
-  '#!charge': _templates_templates__WEBPACK_IMPORTED_MODULE_2__.CATEGORY_TEMPLATE.CHARGE,
-  '#!purchase': _templates_templates__WEBPACK_IMPORTED_MODULE_2__.CATEGORY_TEMPLATE.PURCHASE
+  '#!manage': _templates_templates__WEBPACK_IMPORTED_MODULE_3__.CATEGORY_TEMPLATE.MANAGE,
+  '#!charge': _templates_templates__WEBPACK_IMPORTED_MODULE_3__.CATEGORY_TEMPLATE.CHARGE,
+  '#!purchase': _templates_templates__WEBPACK_IMPORTED_MODULE_3__.CATEGORY_TEMPLATE.PURCHASE
 };
 var menu = {
   manage: (0,_utils_dom__WEBPACK_IMPORTED_MODULE_1__.$)('#manage-menu'),
@@ -966,7 +966,7 @@ var selectTab = function selectTab(hash) {
 var initHashContents = function initHashContents(hash) {
   var _routes$hash;
 
-  var manager = (0,_utils_sessionStorage__WEBPACK_IMPORTED_MODULE_3__.getSessionStorage)('user');
+  var manager = (0,_utils_sessionStorage__WEBPACK_IMPORTED_MODULE_2__.getSessionStorage)('user');
   var content = (_routes$hash = routes[hash]) !== null && _routes$hash !== void 0 ? _routes$hash : '';
 
   if (manager) {
@@ -1787,52 +1787,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "validAmount": () => (/* binding */ validAmount),
 /* harmony export */   "validProductPurchase": () => (/* binding */ validProductPurchase)
 /* harmony export */ });
-/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
-/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _constants_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../constants/constants */ "./src/js/constants/constants.js");
+/* harmony import */ var _utils_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/common */ "./src/js/utils/common.js");
 
 
 const isDuplicateProduct = (name, products) => {
     return products.some((product) => product.name === name);
 };
 const validProductInfo = ({ name, price, quantity }, products) => {
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(name)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.EMPTY_NAME);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isEmpty)(name)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.EMPTY_NAME);
     }
     if (Number.isNaN(price)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.EMPTY_PRICE);
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.EMPTY_PRICE);
     }
     if (Number.isNaN(quantity)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.EMPTY_QUANTITY);
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.EMPTY_QUANTITY);
     }
     if (isDuplicateProduct(name, products)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.DUPLICATE_PRODUCT);
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.DUPLICATE_PRODUCT);
     }
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isMaximumLength)(name, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.MAX_LENGTH)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.OVER_MAX_LENGTH);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isMaximumLength)(name, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.MAX_LENGTH)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.OVER_MAX_LENGTH);
     }
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isDivideUnit)(price, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.PRICE_UNIT)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.NOT_DIVIDE_NUMBER);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isDivideUnit)(price, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.PRICE_UNIT)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.NOT_DIVIDE_NUMBER);
     }
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isRangeNumber)(price, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.PRICE_RANGE.MIN, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.PRICE_RANGE.MAX)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.OUT_OF_PRICE_RANGE);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isRangeNumber)(price, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.PRICE_RANGE.MIN, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.PRICE_RANGE.MAX)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.OUT_OF_PRICE_RANGE);
     }
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isRangeNumber)(quantity, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.QUANTITY_RANGE.MIN, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.PRODUCT.QUANTITY_RANGE.MAX)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.OUT_OF_QUANTITY_RANGE);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isRangeNumber)(quantity, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.QUANTITY_RANGE.MIN, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.PRODUCT.QUANTITY_RANGE.MAX)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.OUT_OF_QUANTITY_RANGE);
     }
     return true;
 };
 const validAmount = (amount, totalAmount) => {
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isDivideUnit)(amount, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.COIN.MIN_UNIT)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.NOT_DIVIDE_NUMBER);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isDivideUnit)(amount, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.COIN.MIN_UNIT)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.NOT_DIVIDE_NUMBER);
     }
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isOverMaxNumber)(totalAmount, _constants_constants__WEBPACK_IMPORTED_MODULE_1__.COIN.MAX_AMOUNT)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.OVER_MAX_AMOUNT);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isOverMaxNumber)(totalAmount, _constants_constants__WEBPACK_IMPORTED_MODULE_0__.COIN.MAX_AMOUNT)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.OVER_MAX_AMOUNT);
     }
     return true;
 };
 const validProductPurchase = (price, userAmount) => {
-    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_0__.isOverMaxNumber)(price, userAmount)) {
-        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_1__.ERROR_MESSAGE.OVER_USER_AMOUNT);
+    if ((0,_utils_common__WEBPACK_IMPORTED_MODULE_1__.isOverMaxNumber)(price, userAmount)) {
+        throw new Error(_constants_constants__WEBPACK_IMPORTED_MODULE_0__.ERROR_MESSAGE.OVER_USER_AMOUNT);
     }
     return true;
 };

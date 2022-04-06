@@ -1805,8 +1805,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../css/index.css */ "./src/css/index.css");
-/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
-/* harmony import */ var _validAccount__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./validAccount */ "./src/js/signup/validAccount.js");
+/* harmony import */ var _validAccount__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./validAccount */ "./src/js/signup/validAccount.js");
+/* harmony import */ var _utils_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/dom */ "./src/js/utils/dom.js");
 /* harmony import */ var _utils_snackbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/snackbar */ "./src/js/utils/snackbar.js");
 /* harmony import */ var _utils_API__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/API */ "./src/js/utils/API.js");
 
@@ -1816,11 +1816,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var signUpForm = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#sign-up-info-form');
-var emailInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#email-input');
-var nameInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#name-input');
-var passwordInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#password-input');
-var passwordCheckInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_3__.$)('#password-check');
+var signUpForm = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#sign-up-info-form');
+var emailInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#email-input');
+var nameInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#name-input');
+var passwordInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#password-input');
+var passwordCheckInput = (0,_utils_dom__WEBPACK_IMPORTED_MODULE_4__.$)('#password-check');
 signUpForm.addEventListener('submit', /*#__PURE__*/function () {
   var _ref = (0,_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_0__["default"])( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default().mark(function _callee(e) {
     var nameValue, emailValue, passwordValue, passwordCheckValue, response, dataResult;
@@ -1834,7 +1834,7 @@ signUpForm.addEventListener('submit', /*#__PURE__*/function () {
             passwordValue = passwordInput.value;
             passwordCheckValue = passwordCheckInput.value;
             _context.prev = 5;
-            (0,_validAccount__WEBPACK_IMPORTED_MODULE_4__.validPassword)(passwordValue, passwordCheckValue);
+            (0,_validAccount__WEBPACK_IMPORTED_MODULE_3__.validPassword)(passwordValue, passwordCheckValue);
             _context.next = 9;
             return (0,_utils_API__WEBPACK_IMPORTED_MODULE_6__.signup)(nameValue, emailValue, passwordValue);
 
@@ -1846,7 +1846,7 @@ signUpForm.addEventListener('submit', /*#__PURE__*/function () {
           case 12:
             dataResult = _context.sent;
 
-            if ((0,_validAccount__WEBPACK_IMPORTED_MODULE_4__.validEmail)(dataResult)) {
+            if ((0,_validAccount__WEBPACK_IMPORTED_MODULE_3__.validEmail)(dataResult)) {
               _context.next = 15;
               break;
             }
